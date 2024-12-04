@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    android:background="@drawable/bg_material_dialog"
+    android:paddingHorizontal="6dp"
+    android:paddingVertical="12dp">
+
+    <ImageButton
+        android:id="@+id/collapse_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/collapse"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp"
+        android:src="@drawable/ic_arrow_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/dialog_button" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collapse_button">
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brightness_controller_title"
+            android:textAlignment="center"
+            android:textColor="@color/dialog_text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/brightness_value_picker"
+            app:layout_constraintStart_toStartOf="@+id/brightness_value_picker"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <NumberPicker
+            android:id="@+id/brightness_value_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/NumberPickerStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label" />
+
+
+        <ImageButton
+            android:id="@+id/button_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/unlock"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:src="@drawable/ic_unlock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brightness_value_picker"
+            app:tint="@color/dialog_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

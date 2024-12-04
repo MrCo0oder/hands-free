@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hands-Free</string>
+
+
+    <string name="brightness_controller_title">Brightness\nController</string>
+
+    <!--  Notifications  -->
+    <string name="notification_channel_name">Hands-Free Notifications</string>
+    <string name="notification_channel_id">HANDS_FREE_NOTIFICATION_CHANNEL</string>
+    <string name="notification_button_cancel">Cancel</string>
+    <string name="notification_button_pause">Pause</string>
+    <string name="notification_button_resume">Resume</string>
+
+    <!--  Errors  -->
+    <string name="is_already_running">You have to cancel the running app before starting a new one</string>
+    <string name="unlock">unlock</string>
+    <string name="collapse">collapse</string>
+</resources>
