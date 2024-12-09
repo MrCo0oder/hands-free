@@ -36,12 +36,12 @@ class HandsFreeTileViewController : TileService() {
 
     override fun onClick() {
         super.onClick()
-        showControllerDialog()
+        if (showControllerDialog() != null)
+            showDialog(showControllerDialog())
     }
 
-    private fun showControllerDialog() {
-        if (controllerDialog?.isShowing == true) return
-
+    private fun showControllerDialog(): Dialog? {
+        if (controllerDialog?.isShowing == true) return null
         controllerDialog = ControllerDialog.build(
             applicationContext,
             onSetValue = { value ->
@@ -50,9 +50,7 @@ class HandsFreeTileViewController : TileService() {
             onCancel = {
             }
         )
-        controllerDialog.apply {
-            showDialog(this)
-        }
+        return controllerDialog
     }
 
     override fun onDestroy() {
