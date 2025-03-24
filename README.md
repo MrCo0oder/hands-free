@@ -5,8 +5,11 @@ Do you want to listen to music, podcasts, or videos while your phone is in your 
 🚀 Features:
 
 ✅ Quick Access Toggle – Enable or disable directly from the Quick Settings panel (like Wi-Fi, Bluetooth, or Airplane Mode).
+
 ✅ Touch Lock Overlay – Prevents unintended screen touches while media is playing.
+
 ✅ Brightness Control – Dim or completely turn off the screen to save battery during audio playback.
+
 ✅ Works with Any Media Player – Compatible with your favorite music and video apps.
 
 🎯 How It Works:
